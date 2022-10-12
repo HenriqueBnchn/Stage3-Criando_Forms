@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Formulário Intermediário</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Mentoria</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </header>
+
+    <main>
+      <form action="" id="user-mentoring-form">
+
+        <fieldset>
+          <legend>Informações pessoais</legend>
+          <div class="fieldset-wrapper">
+
+            <div class="col2">
+              <div class="input-wrapper">
+                <label for="user-name">Nome</label>
+                <input type="text" id="user-name" required>
+              </div>
+              <div class="input-wrapper">
+                <label for="user-lastname">Sobrenome</label>
+                <input type="text" id="user-lastname">
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="user-email">E-mail<span>(digite um email válido)</span> </label>
+              <input type="email" id="user-email" >
+            </div>
+
+            <div class="input-wrapper">
+              <label for="user-pass">Senha<span>(mínimo de 6 caracteres)</span> </label>
+              <input type="password" id="user-pass" required minlength="6">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações do mentor</legend>
+          <div class="fieldset-wrapper">
+            <div class="input-wrapper">
+              <label for="user-mentor">Nome do seu mentor<span>(só o primeiro nome)</span> </label>
+              <input type="text" id="user-mentor" >
+            </div>
+          </div>
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Seus horários disponíveis</legend>
+          <div class="mentor-date-wrapper">
+            <div class="fieldset-wrapper">
+              <div class="col2 date">
+                <div class="input-wrapper">
+                  <p>Primeira mentoria</p>
+                  <label for="user-first-mentor-date">Data<span>(DD/MM/AAAA)</span></label>
+                  <input type="date" id="user-first-mentor-date" >
+                </div>
+
+                <div class="col2 hour">
+                  <div class="input-wrapper">
+                    <label for="user-first-mentor-from">Das</label>
+                    <input type="time" id="user-first-mentor-from">
+                  </div>
+                  <div class="input-wrapper">
+                    <label for="user-first-mentor-until">Até</label>
+                    <input type="time" id="user-first-mentor-until">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fieldset-wrapper">
+              <div class="col2 date">
+                <div class="input-wrapper">
+                  <p>Segunda mentoria</p>
+                  <label for="user-sec-mentor-date">Data<span>(DD/MM/AAAA)</span></label>
+                  <input type="date" id="user-sec-mentor-date" >
+                </div>
+
+                <div class="col2 hour">
+                  <div class="input-wrapper">
+                    <label for="user-sec-mentor-from">Das</label>
+                    <input type="time" id="user-sec-mentor-from">
+                  </div>
+                  <div class="input-wrapper">
+                    <label for="user-sec-mentor-until">Até</label>
+                    <input type="time" id="user-sec-mentor-until">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      <button id="btn-save" form="user-mentoring-form" type="submit">Salvar</button>
+    </footer>
+  </div>
+</body>
+
+</html>

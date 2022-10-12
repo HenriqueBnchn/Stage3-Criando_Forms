@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EFEFEF;
+  padding-bottom: 360px;
+}
+
+body::before {
+  content: '';
+  background-color: #535971;
+
+  height: 436px;
+  width: 100%;
+
+  display: block;
+  position: absolute;
+  z-index: -1;
+
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 48px;
+}
+
+legend {
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  color: #535971;
+
+  border-bottom: 2px solid #E6E6F0;
+  padding-bottom: 12px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+p{
+  font-size: 20px;
+}
+
+span{
+  color: #585363;
+}
+
+span,
+label,
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+label {
+  font-size: 14px;
+  color: #4E4958;
+}
+
+span {
+  font-size: 12px;
+}
+
+
+.container {
+  width: 750px;
+  margin: auto;
+
+}
+
+
+header {
+  margin-top: 140px;
+  width: 417px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+
+  color: #fff;
+}
+
+main {
+  margin-top: 51px;
+  padding: 64px;
+
+  border-radius: 20px 20px 0px 0px;
+
+  background-color: #fff;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+
+.col2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col2.hour{
+  display: flex;
+  gap: 10px;
+}
+
+.col2.date > .input-wrapper{
+  width: 100%;
+}
+
+.col2.hour > .input-wrapper{
+  width: 140px;
+}
+
+
+.col2.date{
+  align-items: flex-end;
+}
+
+
+input {
+  background: #FAFAFC;
+  color: #383441;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  height: 56px;
+
+  padding: 0 14px;
+}
+
+label > span{
+  margin-left: 12px;
+}
+
+.input-wrapper p{
+  font-family: 'Staatliches', cursive;
+  color: #535971;
+}
+
+.mentor-date-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+
+  height: 160px;
+
+  margin: auto;
+  background-color: #535971;
+  padding: 50px 70px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+
+#btn-save{
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  color: #fff;
+
+  background-color: #FF5374;
+
+  width: 100%;
+  height: 55px;
+
+  border-radius: 20px;
+
+  box-shadow: none;
+  border: none;
+}
+
+input:invalid{
+  border: 1px solid red;
+}
